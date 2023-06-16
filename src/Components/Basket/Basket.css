@@ -1,0 +1,101 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.FirstPage {
+  width: 80vw;
+  height: fit-content;
+  margin: auto;
+}
+
+.CompanyDetails {
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.CompanyDetails p {
+  margin-bottom: -0.2rem;
+}
+
+.Quatation_button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SecondSection {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ProductDetail {
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.Signature {
+  float: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.TermsAndConditionName {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.Signature p:last-child {
+  padding-top: 2rem;
+}
+
+.Total {
+  font-weight: 700;
+}
+
+/* Second Page CSS */
+
+.SecondPage {
+  width: 80vw;
+  height: fit-content;
+  margin: auto;
+}
+
+.SecondPage__CompanyDetails {
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.SecondPage__CompanyDetails p {
+  margin-bottom: -0.2rem;
+}
+
+.SecondPage td,
+th {
+  border: 1px solid black;
+  text-align: left;
+}

@@ -1,0 +1,69 @@
+.Header {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100vw;
+  height: fit-content;
+  background-color: #041028;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.CompanyLogo {
+  width: 20%;
+}
+
+.btn-close {
+  color: white;
+}
+.offcanvas {
+  background-color: #041128;
+  color: white;
+}
+.Quatation_list {
+  list-style: none;
+  font-weight: 100;
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.Quatation_list li {
+  margin-top: 1rem;
+  color: white;
+}
+
+.Quatation_list li:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  background-color: #fe5c12;
+}
+
+.quat_Button {
+  text-decoration: none;
+  color: white;
+  background-color: #fe5c12;
+  padding: 1rem;
+  font-weight: 100;
+}
+
+.MenuIcon {
+  color: #fe5c12;
+  margin-top: 1rem;
+}
+
+.MenuIcon:hover {
+  background-color: #fe5c12;
+  color: white;
+}
+
+.btn-close {
+  width: 0.3rem;
+}
