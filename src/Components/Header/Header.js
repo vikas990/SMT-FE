@@ -27,7 +27,35 @@ const Header = ({
     <>
       <div className="Header">
         {/* Drawer*/}
-        <div className="Drawer">
+        <div
+          class="offcanvas offcanvas-start show pcSideBar"
+          tabindex="-1"
+          id="offcanvas"
+          aria-labelledby="offcanvasLabel"
+          data-bs-backdrop="false"
+          data-bs-scroll="true"
+        >
+          <div class="header">
+            <img src={logo} alt="Logo" className="CompanyLogo" />
+            <h5 class="offcanvas-title" id="offcanvasLabel">
+              Sarswati Machine Tools
+            </h5>
+          </div>
+          <div class="offcanvas-body">
+            <hr className="BottomLine" />
+            <ul className="Quatation_list">
+              <li onClick={() => setProductGroup("All Products")}>
+                All Products
+              </li>
+              {data?.map((productGroup, i) => (
+                <li onClick={() => setProductGroup(productGroup.MainName)}>
+                  {productGroup.MainName}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        {/* <div className="Drawer">
           <a
             class="btn"
             data-bs-toggle="offcanvas"
@@ -81,11 +109,12 @@ const Header = ({
               </div>
             </div>
           </div>
-        </div>
+                  </div>*/}
         {/* Drawer Ends here*/}
-        <p className="logo">Sarswati Machine Tools PVT. LTD.</p>
+
+        <p className="logo">{productGroup}</p>
         <Link className="quat_Button" to={"/Basket"}>
-          Quatation
+          Get Quotation
         </Link>
       </div>
       <div>

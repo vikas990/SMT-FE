@@ -27,7 +27,6 @@ const Main = ({
 
   return (
     <div className="Container">
-      <p className="Heading">Products</p>
       <div className="DropDownContainer">
         <div className="dropdown">
           <button
@@ -58,14 +57,14 @@ const Main = ({
           ""
         ) : addedProductGroup ? (
           <a
-            className="btn btn-danger"
+            className="btn btn-danger groupButton"
             onClick={() => RemoveProductGroup(newProductData)}
           >
             Remove Product Group
           </a>
         ) : (
           <a
-            className="btn btn-success"
+            className="btn btn-success groupButton"
             onClick={() => AddProductGroup(newProductData)}
           >
             Add Product Group
@@ -117,12 +116,12 @@ const Main = ({
                         </button>
                       </div>
                     ) : (
-                      <a
+                      <button
                         className="btn btn-primary"
                         onClick={() => AddItemToCart(details)}
                       >
                         Add to Quatation
-                      </a>
+                      </button>
                     )}
                   </div>
                 </div>
