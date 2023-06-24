@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Main.css";
 import { Data } from "../Data";
 
@@ -24,6 +24,10 @@ const Main = ({
   if (newProductData.length === 0) {
     newProductData = Data;
   }
+
+  useEffect(() => {
+    document.title = "Sarswati Machine Tools";
+  }, []);
 
   return (
     <div className="Container">

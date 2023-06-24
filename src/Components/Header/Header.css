@@ -2,23 +2,13 @@
   font-size: 1rem;
   font-weight: 100;
   text-align: center;
-  width: 72vw;
-  color: #242424;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 25%;
-  padding: 2%;
-}
-
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 1rem;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+  background-color: #242424;
+  color: white;
 }
 
 .CompanyLogo {
@@ -29,10 +19,6 @@
   color: white;
 }
 
-.pcSideBar {
-  background-color: #242424;
-  color: white;
-}
 .header {
   display: flex;
   flex-wrap: nowrap;
@@ -40,19 +26,25 @@
   align-items: center;
   margin-top: 2rem;
   margin-left: 2rem;
-  color: #e8e8e8;
 }
 .BottomLine {
   border-bottom: 0.062rem solid #b4b4b4;
+  width: 90%;
+  margin-left: 5%;
 }
-
+.close-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+}
 .offcanvas-backdrop {
   background-color: transparent;
 }
-/* .offcanvas {
+.offcanvas {
   background-color: #242424;
   color: white;
-} */
+}
 .Quatation_list {
   list-style: none;
   font-weight: 100;
@@ -75,23 +67,64 @@
 
 .quat_Button {
   text-decoration: none;
-  color: white;
-  background-color: #242424;
+  color: #242424;
+  background-color: white;
   padding: 1rem;
   font-weight: 100;
   border-radius: 0.6rem;
+  transition: 0.3s;
+}
+
+.quat_Button:hover {
+  color: white;
+  background-color: #242424;
+  border: 0.062rem solid white;
 }
 
 .MenuIcon {
-  color: #fe5c12;
+  color: white;
   margin-top: 1rem;
 }
 
 .MenuIcon:hover {
-  background-color: #fe5c12;
   color: white;
 }
 
 .btn-close {
   width: 0.3rem;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoSection img {
+  width: 10%;
+  height: 10%;
+}
+
+.logoSection p {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 26.562rem) {
+  .logoSection p {
+    display: none;
+  }
+  .logoSection img {
+    width: 20%;
+    height: 20%;
+  }
+  .quat_Button {
+    text-decoration: none;
+    color: #242424;
+    background-color: white;
+    font-weight: 100;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+  }
 }

@@ -27,35 +27,7 @@ const Header = ({
     <>
       <div className="Header">
         {/* Drawer*/}
-        <div
-          class="offcanvas offcanvas-start show pcSideBar"
-          tabindex="-1"
-          id="offcanvas"
-          aria-labelledby="offcanvasLabel"
-          data-bs-backdrop="false"
-          data-bs-scroll="true"
-        >
-          <div class="header">
-            <img src={logo} alt="Logo" className="CompanyLogo" />
-            <h5 class="offcanvas-title" id="offcanvasLabel">
-              Sarswati Machine Tools
-            </h5>
-          </div>
-          <div class="offcanvas-body">
-            <hr className="BottomLine" />
-            <ul className="Quatation_list">
-              <li onClick={() => setProductGroup("All Products")}>
-                All Products
-              </li>
-              {data?.map((productGroup, i) => (
-                <li onClick={() => setProductGroup(productGroup.MainName)}>
-                  {productGroup.MainName}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        {/* <div className="Drawer">
+        <div className="Drawer">
           <a
             class="btn"
             data-bs-toggle="offcanvas"
@@ -83,11 +55,14 @@ const Header = ({
               </h5>
               <button
                 type="button"
-                className="btn-close text-reset"
+                className="text- close-btn"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              >
+                X
+              </button>
             </div>
+            <hr className="BottomLine" />
             <div class="offcanvas-body">
               <div>
                 <ul className="Quatation_list">
@@ -109,10 +84,13 @@ const Header = ({
               </div>
             </div>
           </div>
-                  </div>*/}
+        </div>
         {/* Drawer Ends here*/}
 
-        <p className="logo">{productGroup}</p>
+        <div className="logoSection">
+          <img src={logo} alt="Logo" className="CompanyLogo" />
+          <p>Sarswati Machine Tools</p>
+        </div>
         <Link className="quat_Button" to={"/Basket"}>
           Get Quotation
         </Link>

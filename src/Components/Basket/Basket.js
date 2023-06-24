@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ReactToPrint from "react-to-print";
 import "./Basket.css";
 import { useNavigate } from "react-router-dom";
@@ -15,6 +15,10 @@ const Basket = ({
   const navigate = useNavigate();
   const componentRef = useRef();
   const totalPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
+
+  useEffect(() => {
+    document.title = "Quotation";
+  }, []);
 
   return (
     <>

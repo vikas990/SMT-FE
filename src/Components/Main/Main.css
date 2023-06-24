@@ -1,7 +1,6 @@
 .Container {
   margin-top: 1rem;
-  width: 60vw;
-  margin-left: 25%;
+  width: 100vw;
 }
 
 .Heading {
@@ -12,9 +11,8 @@
 
 .Grid_container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   row-gap: 1.5rem;
-  width: 75vw;
   margin-left: 5%;
 }
 
@@ -35,14 +33,10 @@
 
 .DropDownContainer {
   display: flex;
-  width: 75vw;
-  margin-left: 0.5%;
-  margin-bottom: 1rem;
-}
-
-/* .dropdown {
   margin-left: 5%;
-} */
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
 
 .mainName {
   background-color: #fe5c12;
@@ -56,5 +50,49 @@
 }
 
 .groupButton {
-  margin-left: 75%;
+  margin-right: 8%;
+}
+
+@media screen and (max-width: 90rem) {
+  .groupButton {
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 64rem) {
+  .Grid_container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .groupButton {
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .Grid_container {
+    grid-template-columns: auto auto;
+  }
+  .groupButton {
+    margin-right: 11%;
+  }
+}
+
+@media screen and (max-width: 26.562rem) {
+  .Grid_container {
+    grid-template-columns: auto;
+    margin-left: 15%;
+  }
+  .groupButton {
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Grid_container {
+    margin-left: 4%;
+  }
+  .groupButton {
+    margin-right: 5%;
+  }
 }
